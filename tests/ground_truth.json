@@ -1,0 +1,50 @@
+{ 
+    "rules": { 
+       "whitespace": { 
+          "remove_extra_spaces": true, 
+          "replace_line_breaks": true 
+        }, 
+        
+        "email": { 
+           "lowercase": true,
+           "validate_format": true 
+        }, 
+        "phone": { 
+            "remove_line_breaks": true, 
+            "allow_digits_spaces_plus": true 
+        }, 
+        "missing_values": { 
+            "dash_is_missing": true 
+        }, 
+        "duplicates": { 
+            "registration_numbers_should_be_flagged": true 
+        } 
+    },
+    "validation": {
+        "valid_email_examples": [
+            "contact@novalogistics.com",
+            "info@solacehealth.org",
+            "sales@meridiantextiles.com",
+            "hello@coralbay.com",
+            "ops@atlasfreight.com",
+            "contact@wavecrestmedia.com",
+            "hello@fernando.co",
+            "contact@unnamedbiz.com",
+            "reach@driftline.co",
+            "team@sunbirdanalytics.com",
+            "lonely@inbox.com"
+        ],
+
+        "invalid_email_examples": [
+            "brightpath@@mail"
+        ],
+
+        "invalid_phone_examples": [
+            "07-ABC-999"
+        ],
+
+        "review_countries": [
+            "Atlantis"
+        ]
+    }
+}

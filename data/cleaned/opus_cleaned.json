@@ -1,0 +1,458 @@
+[
+  {
+    "cleaned_row": {
+      "ID": "TC-01",
+      "Company Name": "Nova Logistics Ltd.",
+      "Registration No.": "RC-884213",
+      "Tax ID": "TIN-0093827",
+      "Email": "contact@novalogistics.com",
+      "Phone": "+237 677 123 456",
+      "Country": "Cameroon",
+      "Industry": "Logistics"
+    },
+    "issues": [
+      "Phone: Removed line break and normalized formatting"
+    ],
+    "confidence": 0.95,
+    "_usage": {
+      "input_tokens": 346,
+      "output_tokens": 150
+    }
+  },
+  {
+    "cleaned_row": {
+      "ID": "TC-02",
+      "Company Name": "BrightPath Traders",
+      "Registration No.": "RC-771029",
+      "Tax ID": "TIN-0044521",
+      "Email": "INVALID",
+      "Phone": "+234 802 555 1122",
+      "Country": "Nigeria",
+      "Industry": "Retail"
+    },
+    "issues": [
+      "Email 'brightpath@@mail' is malformed: contains double '@' symbol and incomplete domain; marked as INVALID",
+      "Phone number contained line break which was removed and normalized"
+    ],
+    "confidence": 0.85,
+    "_usage": {
+      "input_tokens": 343,
+      "output_tokens": 175
+    }
+  },
+  {
+    "cleaned_row": {
+      "ID": "TC-03",
+      "Company Name": "Solace Health Group",
+      "Registration No.": "RC-903117",
+      "Tax ID": "TIN-0078342",
+      "Email": "info@solacehealth.org",
+      "Phone": "07-ABC-999",
+      "Country": "Kenya",
+      "Industry": "Healthcare"
+    },
+    "issues": [
+      "Company Name: Removed line break between 'Solace Health' and 'Group'",
+      "Phone: Contains invalid characters (letters 'ABC') - marked for review, original value preserved"
+    ],
+    "confidence": 0.75,
+    "_usage": {
+      "input_tokens": 343,
+      "output_tokens": 180
+    }
+  },
+  {
+    "cleaned_row": {
+      "ID": "TC-04",
+      "Company Name": "Meridian Textiles",
+      "Registration No.": "RC-556230",
+      "Tax ID": "TIN-0012345",
+      "Email": "sales@meridiantextiles.com",
+      "Phone": "+20 100 234 5678",
+      "Country": "Egypt",
+      "Industry": "Manufacturing"
+    },
+    "issues": [
+      "Phone: Removed line break and normalized formatting"
+    ],
+    "confidence": 0.95,
+    "_usage": {
+      "input_tokens": 346,
+      "output_tokens": 150
+    }
+  },
+  {
+    "cleaned_row": {
+      "ID": "TC-05",
+      "Company Name": "Coral Bay Exports",
+      "Registration No.": "RC-884213",
+      "Tax ID": "TIN-0099112",
+      "Email": "hello@coralbay.com",
+      "Phone": "+27 71 234 5566",
+      "Country": "South Africa",
+      "Industry": "Import/Export"
+    },
+    "issues": [
+      "Phone: Removed line break and normalized spacing"
+    ],
+    "confidence": 0.98,
+    "_usage": {
+      "input_tokens": 347,
+      "output_tokens": 151
+    }
+  },
+  {
+    "cleaned_row": {
+      "ID": "TC-06",
+      "Company Name": "R&D Sync!nc.",
+      "Registration No.": "RC-330218",
+      "Tax ID": "TIN-0055214",
+      "Email": "team@rdsync.io",
+      "Phone": "+254 712 334 556",
+      "Country": "Kenya",
+      "Industry": "Technology"
+    },
+    "issues": [
+      "Company Name contains unusual character '!' - may be typo for 'R&D Sync Inc.'",
+      "Phone contained line break - removed and normalized spacing",
+      "Phone number has 10 digits after country code - verify if correct for Kenya mobile format"
+    ],
+    "confidence": 0.85,
+    "_usage": {
+      "input_tokens": 345,
+      "output_tokens": 197
+    }
+  },
+  {
+    "cleaned_row": {
+      "ID": "TC-07",
+      "Company Name": "Atlas Freight Co.",
+      "Registration No.": "RC-119887",
+      "Tax ID": "TIN-0038291",
+      "Email": "ops@atlasfreight.com",
+      "Phone": "+1 555 010 2233",
+      "Country": "Atlantis",
+      "Industry": "Logistics"
+    },
+    "issues": [
+      "Phone: Removed line break, normalized spacing",
+      "Country: 'Atlantis' is not a recognized country - flagged for review"
+    ],
+    "confidence": 0.75,
+    "_usage": {
+      "input_tokens": 347,
+      "output_tokens": 173
+    }
+  },
+  {
+    "cleaned_row": {
+      "ID": "TC-08",
+      "Company Name": "Wavecrest Media",
+      "Registration No.": "RC-224510",
+      "Tax ID": "TIN-0061127",
+      "Email": "contact@wavecrestmedia.com",
+      "Phone": "+44 20 7946 0958",
+      "Country": "United Kingdom",
+      "Industry": "Underwater Basket Weaving"
+    },
+    "issues": [
+      "Phone contained line break - normalized formatting",
+      "Country contained line break - normalized to 'United Kingdom'",
+      "Industry contained line breaks - normalized to 'Underwater Basket Weaving'",
+      "Industry 'Underwater Basket Weaving' is unusual - flagged for review"
+    ],
+    "confidence": 0.85,
+    "_usage": {
+      "input_tokens": 361,
+      "output_tokens": 215
+    }
+  },
+  {
+    "cleaned_row": {
+      "ID": "TC-09",
+      "Company Name": "Fern & Co.",
+      "Registration No.": "",
+      "Tax ID": "",
+      "Email": "hello@fernandco.com",
+      "Phone": "",
+      "Country": "",
+      "Industry": ""
+    },
+    "issues": [
+      "Registration No.: Missing value (contained placeholder '—')",
+      "Tax ID: Missing value (contained placeholder '—')",
+      "Phone: Missing value (contained placeholder '—')",
+      "Country: Missing value (contained placeholder '—')",
+      "Industry: Missing value (contained placeholder '—')"
+    ],
+    "confidence": 0.4,
+    "_usage": {
+      "input_tokens": 328,
+      "output_tokens": 182
+    }
+  },
+  {
+    "cleaned_row": {
+      "ID": "TC-10",
+      "Company Name": "Highland Farms",
+      "Registration No.": "",
+      "Tax ID": "",
+      "Email": "",
+      "Phone": "",
+      "Country": "Ghana",
+      "Industry": ""
+    },
+    "issues": [
+      "Registration No.: missing value (placeholder '—' converted to empty)",
+      "Tax ID: missing value (placeholder '—' converted to empty)",
+      "Email: missing value (placeholder '—' converted to empty)",
+      "Phone: missing value (placeholder '—' converted to empty)",
+      "Industry: missing value (placeholder '—' converted to empty)"
+    ],
+    "confidence": 0.4,
+    "_usage": {
+      "input_tokens": 320,
+      "output_tokens": 184
+    }
+  },
+  {
+    "cleaned_row": {
+      "ID": "TC-11",
+      "Company Name": "",
+      "Registration No.": "RC-667712",
+      "Tax ID": "TIN-0071234",
+      "Email": "",
+      "Phone": "",
+      "Country": "",
+      "Industry": ""
+    },
+    "issues": [
+      "Company Name is missing (placeholder '—' found)",
+      "Email is missing (placeholder '—' found)",
+      "Phone is missing (placeholder '—' found)",
+      "Country is missing (placeholder '—' found)",
+      "Industry is missing (placeholder '—' found)"
+    ],
+    "confidence": 0.3,
+    "_usage": {
+      "input_tokens": 326,
+      "output_tokens": 174
+    }
+  },
+  {
+    "cleaned_row": {
+      "ID": "TC-12",
+      "Company Name": "",
+      "Registration No.": "",
+      "Tax ID": "",
+      "Email": "contact@unnamedbiz.com",
+      "Phone": "+233 24 456 7890",
+      "Country": "",
+      "Industry": ""
+    },
+    "issues": [
+      "Company Name: Missing value (contained placeholder '—')",
+      "Registration No.: Missing value (contained placeholder '—')",
+      "Tax ID: Missing value (contained placeholder '—')",
+      "Phone: Removed line break, normalized formatting",
+      "Country: Missing value (contained placeholder '—')",
+      "Industry: Missing value (contained placeholder '—')"
+    ],
+    "confidence": 0.4,
+    "_usage": {
+      "input_tokens": 333,
+      "output_tokens": 200
+    }
+  },
+  {
+    "cleaned_row": {
+      "ID": "TC-13",
+      "Company Name": "Zenith Consulting",
+      "Registration No.": "",
+      "Tax ID": "",
+      "Email": "",
+      "Phone": "",
+      "Country": "Rwanda",
+      "Industry": "Consulting"
+    },
+    "issues": [
+      "Registration No.: Missing value (placeholder '—' converted to empty)",
+      "Tax ID: Missing value (placeholder '—' converted to empty)",
+      "Email: Missing value (placeholder '—' converted to empty)",
+      "Phone: Missing value (placeholder '—' converted to empty)"
+    ],
+    "confidence": 0.85,
+    "_usage": {
+      "input_tokens": 323,
+      "output_tokens": 173
+    }
+  },
+  {
+    "cleaned_row": {
+      "ID": "TC-14",
+      "Company Name": "",
+      "Registration No.": "",
+      "Tax ID": "TIN-0082234",
+      "Email": "",
+      "Phone": "",
+      "Country": "Morocco",
+      "Industry": ""
+    },
+    "issues": [
+      "Company Name is missing (placeholder '—' found)",
+      "Registration No. is missing (placeholder '—' found)",
+      "Email is missing (placeholder '—' found)",
+      "Phone is missing (placeholder '—' found)",
+      "Industry is missing (placeholder '—' found)"
+    ],
+    "confidence": 0.3,
+    "_usage": {
+      "input_tokens": 323,
+      "output_tokens": 173
+    }
+  },
+  {
+    "cleaned_row": {
+      "ID": "TC-15",
+      "Company Name": "Ivory Peak Ventures",
+      "Registration No.": "",
+      "Tax ID": "",
+      "Email": "",
+      "Phone": "",
+      "Country": "",
+      "Industry": ""
+    },
+    "issues": [
+      "Registration No.: missing value (placeholder '—' replaced with empty)",
+      "Tax ID: missing value (placeholder '—' replaced with empty)",
+      "Email: missing value (placeholder '—' replaced with empty)",
+      "Phone: missing value (placeholder '—' replaced with empty)",
+      "Country: missing value (placeholder '—' replaced with empty)",
+      "Industry: missing value (placeholder '—' replaced with empty)"
+    ],
+    "confidence": 0.3,
+    "_usage": {
+      "input_tokens": 322,
+      "output_tokens": 200
+    }
+  },
+  {
+    "cleaned_row": {
+      "ID": "TC-16",
+      "Company Name": "",
+      "Registration No.": "",
+      "Tax ID": "",
+      "Email": "reach@driftline.co",
+      "Phone": "+225 07 12 34 56",
+      "Country": "Côte d'Ivoire",
+      "Industry": ""
+    },
+    "issues": [
+      "Company Name: Missing value (contained placeholder '—')",
+      "Registration No.: Missing value (contained placeholder '—')",
+      "Tax ID: Missing value (contained placeholder '—')",
+      "Phone: Removed line break, normalized spacing",
+      "Industry: Missing value (contained placeholder '—')"
+    ],
+    "confidence": 0.75,
+    "_usage": {
+      "input_tokens": 340,
+      "output_tokens": 195
+    }
+  },
+  {
+    "cleaned_row": {
+      "ID": "TC-17",
+      "Company Name": "",
+      "Registration No.": "RC-449021",
+      "Tax ID": "",
+      "Email": "",
+      "Phone": "",
+      "Country": "Senegal",
+      "Industry": "Agriculture"
+    },
+    "issues": [
+      "Company Name is missing (placeholder '—' detected)",
+      "Tax ID is missing (placeholder '—' detected)",
+      "Email is missing (placeholder '—' detected)",
+      "Phone is missing (placeholder '—' detected)"
+    ],
+    "confidence": 0.5,
+    "_usage": {
+      "input_tokens": 323,
+      "output_tokens": 161
+    }
+  },
+  {
+    "cleaned_row": {
+      "ID": "TC-18",
+      "Company Name": "Sunbird Analytics",
+      "Registration No.": "",
+      "Tax ID": "TIN-0091133",
+      "Email": "team@sunbirdanalytics.com",
+      "Phone": "+256 772 334 455",
+      "Country": "",
+      "Industry": ""
+    },
+    "issues": [
+      "Registration No.: Missing value (contained placeholder '—')",
+      "Phone: Removed line break, normalized formatting",
+      "Country: Missing value (contained placeholder '—')",
+      "Industry: Missing value (contained placeholder '—')"
+    ],
+    "confidence": 0.85,
+    "_usage": {
+      "input_tokens": 342,
+      "output_tokens": 183
+    }
+  },
+  {
+    "cleaned_row": {
+      "ID": "TC-19",
+      "Company Name": "",
+      "Registration No.": "",
+      "Tax ID": "",
+      "Email": "lonely@inbox.com",
+      "Phone": "",
+      "Country": "",
+      "Industry": ""
+    },
+    "issues": [
+      "Company Name is missing (contained placeholder '—')",
+      "Registration No. is missing (contained placeholder '—')",
+      "Tax ID is missing (contained placeholder '—')",
+      "Phone is missing (contained placeholder '—')",
+      "Country is missing (contained placeholder '—')",
+      "Industry is missing (contained placeholder '—')"
+    ],
+    "confidence": 0.3,
+    "_usage": {
+      "input_tokens": 322,
+      "output_tokens": 184
+    }
+  },
+  {
+    "cleaned_row": {
+      "ID": "TC-20",
+      "Company Name": "Palm Ridge Holdings",
+      "Registration No.": "RC-558893",
+      "Tax ID": "",
+      "Email": "",
+      "Phone": "",
+      "Country": "Tanzania",
+      "Industry": ""
+    },
+    "issues": [
+      "Company Name: Removed line break",
+      "Tax ID: Missing value (was placeholder '—')",
+      "Email: Missing value (was placeholder '—')",
+      "Phone: Missing value (was placeholder '—')",
+      "Industry: Missing value (was placeholder '—')"
+    ],
+    "confidence": 0.75,
+    "_usage": {
+      "input_tokens": 327,
+      "output_tokens": 175
+    }
+  }
+]
